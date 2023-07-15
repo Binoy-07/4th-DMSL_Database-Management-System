@@ -1,0 +1,39 @@
+create table users(
+    id int primary key auto_increment,
+    name varchar(30),
+    email varchar(30),
+    salary int default null,
+    department varchar(20),
+    password varchar(100),
+    role varchar(20),
+    status boolean default false
+);
+
+INSERT INTO users(name, email, department,password,role,status)
+Values 
+('Admin','admin@gmail.com','CSE','e10adc3949ba59abbe56e057f20f883e', 'Admin', 1);
+
+create table departments(
+    id int primary key auto_increment,
+    name varchar(100),
+    short_name varchar(100)
+);
+insert into departments (name, short_name)
+values 
+('Computer Science & engineering', 'CSE'),
+('Electrical & Electronics engineering', 'EEE'),
+('Civil Engineering', 'CE');
+
+create table courses(
+    id int primary key auto_increment,
+    name varchar(100),
+    department_id int,
+    FOREIGN KEY (department_id) REFERENCES departments(id)
+);
+
+insert into courses (name, department_id)
+values 
+('Database Management System', 1),
+('Algorithm Design', 1),
+('Power System', 2),
+('Structural Engineering', 3);
