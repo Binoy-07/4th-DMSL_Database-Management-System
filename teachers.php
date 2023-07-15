@@ -17,10 +17,6 @@
 <body>
     <div class="container">
         <h2>All Teachers</h2>
-        <form action="" method="post">
-            <input type="text" name="q" class="form-control" id="">
-            <input type="button" value="Search">
-        </form>
         <table class="table table-striped">
             <thead>
                 <th>Name</th>

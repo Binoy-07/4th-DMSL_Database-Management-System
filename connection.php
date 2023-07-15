@@ -2,7 +2,7 @@
 $username = "root";
 $password = "";
 $hostname = "localhost"; 
-$db = "dmsl_b_db";
+$db = "ab";
 
 $conn = mysqli_connect($hostname, $username, $password, $db);
 
