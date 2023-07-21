@@ -40,7 +40,18 @@
                 // save user data into session
                 $_SESSION['user_name'] = $r['name'];
                 $_SESSION['user_role'] = $r['role'];
-                header('Location: dashboard.php');
+              
+                if( $_SESSION['user_role']=='Admin'){
+                    header('Location: dashboard.php');
+                }
+                if( $_SESSION['user_role']=='Teacher'){
+                    header('Location: teacher_dashboard.php');
+                }
+                if( $_SESSION['user_role']=='Student'){
+                    header('Location: student_dashboard.php');
+                }
+                
+                
             }
             else{
                 echo 'Not Approved';

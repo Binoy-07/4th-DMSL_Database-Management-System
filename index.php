@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
@@ -47,6 +47,10 @@
                     <option value="Student">Student</option>
                 </select>
             </div>
+            <div class="mb-3">
+                 <label for="formFile" class="form-label">Image</label>
+                 <input class="form-control" type="file" id="formFile">
+            </div>           
             <div class="form-group">
                 <button type="submit" class="btn btn-primary" name="submitBtn">Save</button>
             </div>

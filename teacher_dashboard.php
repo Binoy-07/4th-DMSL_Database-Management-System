@@ -1,6 +1,6 @@
 <?php   
     require 'auth.php'; // Include the authentication code
-    restrictAccess('Admin');
+    restrictAccess('Teacher');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +13,9 @@
 <body>
     <div class="container">
         <h2>Dashboard</h2>
-        <p>This is dashboard Page</p>
-        <?php 
-            if($_SESSION['user_role']=="Admin"){ ?>
-                <ul>
-                    <li><a href="pending_users.php">Pending Users</a></li>
-                </ul>
-            <?php  }
-        ?>       
+        <p>This is Teacher dashboard Page</p>
+        
+        
     </div>
 </body>
 </html>

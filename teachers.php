@@ -36,7 +36,7 @@
                             <td>
                                 <a class="btn btn-primary" href="edit.php?tId=<?php echo $r['id'] ?>" >Edit</a>
                                 <a class="btn btn-secondary" data-toggle="modal" data-target="#myModal<?php echo $r['id']; ?>" >Delete</a>
-                                <div class="modal" id="myModal<?php echo $r['id']; ?>">
+                                <div class="modal" id="myModal<?php echo $r['id']; ?>"> 
                                     <div class="modal-dialog">
                                         <div class="modal-content">
 
