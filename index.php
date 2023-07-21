@@ -74,7 +74,7 @@
             ('".$teacher_name."', '".$teacher_email."', 
             $teacher_salary, '".$teacher_department."', '".md5($password)."', '".$role."')";
             if(mysqli_query($conn, $str)){
-                header('Location: teachers.php');
+                header('Location: users.php');
             }
         }
         else {
